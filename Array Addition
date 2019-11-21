@@ -46,7 +46,7 @@ up1:
 	call accept_proc
 	mov [rbp],bx
 	add rbp,2
-	dec word[cnt]
+	dec byte[cnt]
 	jnz up1
 
 	scall 1,1,m3,l3
